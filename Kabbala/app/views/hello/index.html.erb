@@ -1,0 +1,8 @@
+<h1> カバラ数秘術</h1>
+<p> 誕生日を入力してください </p>
+<p> 例: 1675年6月30日の場合は16750630と入力してください。 </p>
+<%= form_tag(controller:"hello", action: "index") do %>
+  <%= text_field_tag("input1") %>
+  <%= submit_tag("クリック") %>
+<% end %>
+<p> <%= @result %> </p>
